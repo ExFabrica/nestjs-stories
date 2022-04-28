@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "8a11d194-d6ee-408f-ab1b-ae41cc94a7ce",
+		"name": "nestjs-stories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/v1.0/inventory (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1.0/inventory",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1.0",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1.0/inventory (POST)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Orc Power Shield !\",\r\n    \"description\" : \"This Shield from ORC tribe is very resistant and heavy\",\r\n    \"powerlevel\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/v1.0/inventory",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1.0",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1.0/inventory (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Orc Power Shield updated !\",\r\n    \"description\" : \"This Shield from ORC tribe is very resistant and heavy\",\r\n    \"powerlevel\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/v1.0/inventory/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1.0",
+						"inventory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1.0/inventory (DELETE)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/v1.0/inventory/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1.0",
+						"inventory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
